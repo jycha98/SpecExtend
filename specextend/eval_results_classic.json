@@ -1,0 +1,23 @@
+{
+  "1K": {
+    "avg_accept_length": 3.458,
+    "avg_tokens_per_sec": 49.688,
+    "total_generated_tokens": 263,
+    "total_inference_time (s)": 5.293,
+    "runs": 1
+  },
+  "2K": {
+    "avg_accept_length": 2.25,
+    "avg_tokens_per_sec": 39.174,
+    "total_generated_tokens": 260,
+    "total_inference_time (s)": 6.637,
+    "runs": 1
+  },
+  "4K": {
+    "avg_accept_length": 2.185,
+    "avg_tokens_per_sec": 35.685,
+    "total_generated_tokens": 258,
+    "total_inference_time (s)": 7.23,
+    "runs": 1
+  }
+}
