@@ -16,7 +16,6 @@
   />
 </p>
 
-------
 
 ## Introduction
 
@@ -37,7 +36,7 @@ Through extensive evaluation, SpecExtend achieves:
 
 SpecExtend also preserves performance on short sequences and does not require retraining, offering a robust drop-in enhancement for speculative decoding of long sequences.
 
-------------
+
 ## Installation
 
 ```bash
@@ -45,7 +44,7 @@ git clone git@github.com:jycha98/SpecExtend.git
 cd SpecExtend
 pip install -r requirements.txt
 ```
----
+
 ## Inference
 We provide inference scripts for both Vicuna 7B and LongChat 7B as target models, using two types of draft models: classic LLMs (e.g., Vicuna 68M) and EAGLE draft models. To run inference with EAGLE, use `run_eagle.py`.
 
@@ -58,7 +57,7 @@ python run_classic.py \
   --output_result_line \
   --max_gen_len 256
 ```
----
+
 ## Evaluation
 We also provide scripts to evaluate SpecExtend's performance on GovReport and PG-19. To run evaluation with EAGLE, use `eval_eagle.py`.
 
@@ -72,4 +71,3 @@ python eval_classic.py \
   --max_gen_len 256 \
   --output_file eval_results_classic.json
 ```
----
