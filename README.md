@@ -49,6 +49,7 @@ SpecExtend also preserves performance on short sequences and does not require re
     <img src="figs/16K.gif" alt="16K-token example" style="max-width: 100%;" />
     <figcaption><em>Input length: 16K</em></figcaption>
   </figure>
+  <br/>
 </div>
 
 <p align="center">
