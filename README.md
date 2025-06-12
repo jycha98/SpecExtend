@@ -60,7 +60,7 @@ SpecExtend also preserves performance on short sequences and does not require re
 ## Installation
 
 ```bash
-git clone git@github.com:jycha98/SpecExtend.git
+git clone https://github.com/jycha98/SpecExtend.git
 cd SpecExtend
 pip install -r requirements.txt
 ```
