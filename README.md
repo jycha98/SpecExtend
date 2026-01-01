@@ -29,12 +29,12 @@ While speculative decoding has emerged as an effective, lossless solution to acc
 * **Accelerating forward passes** of both the draft and target models, integrating efficient attention mechanisms across all stages (FlashAttention & Hybrid Tree Attention).
 * **Introducing Cross-model Retrieval**, a novel cache update strategy that uses the target model's attention scores to dynamically update the draft model’s KV cache with globally relevant context, boosting both draft speed and accuracy without retraining.
 
-Through extensive evaluation, SpecExtend achieves:
+SpecExtend achieves up to:
 
-* Up to **2.29×** speedup over standard tree‑based speculative decoding with Vicuna 7B and 68M on inputs up to 16K tokens,
-* resulting in an overall **2.98×** speedup compared to naive autoregressive generation.
+* **2.84×** speedup on the long summarization task with Vicuna 7B and 68M on inputs up to 16K tokens of GovReport, 
+* **3.86×** speedup on the long reasoning task with DeepSeek-R1-Distill-Llama-8B and EAGLE-3 on AIME-24.
 
-SpecExtend also preserves performance on short sequences and does not require retraining, offering a robust drop-in enhancement for speculative decoding of long sequences.
+SpecExtend also preserves performance on short sequences, is training-free and compatible with SOTA speculative decoding frameworks like EAGLE-3.
 
 <div align="center">
   <!-- First GIF + italic caption -->
